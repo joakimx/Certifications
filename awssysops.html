@@ -4,16 +4,16 @@ title: Welcome
 ---
 
 
-{% for post in site.posts %}
+{% for post in site.sysops %}
 
-<article class='post'>
+<article class='sysops'>
   <h1 class='post-title'>
-    <a href="{{ site.path }}{{ post.url }}">
+    <a href="{{ site.path }}{{ sysops.url }}">
       {{ post.title }}
     </a>
   </h1>
-  <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
-  {{ post.content }}
+  <div class="sysops-date">{{ sysops.date | date: "%b %-d, %Y" }}</div>
+  {{ sysops.content }}
 </article>
 
 {% endfor %}
